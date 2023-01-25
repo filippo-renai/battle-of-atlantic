@@ -30,6 +30,8 @@
     </div>
     <br><br>
     <div class="container">
+        <audio id="game" src="game.mp3" preload="auto" loop></audio>
+        <audio id="water" src="water.mp3" preload="auto"></audio>
         <div class="row">
             <div class="col-8">
                 <p class="lh-1" style="color:#ffffff">
@@ -120,9 +122,11 @@
                 cleanNormale();
                 spari++;
 
-                if (spari == 1)
+                if (spari == 1){
+                    document.getElementById("game").play();
                     window.alert("Radarista: Colpo di avvertimento effettuato!\nSignore lei è un gentleman, ma cerchiamo di affondarlo dal prossimo colpo");
-                // inizio della partita
+                }
+                    // inizio della partita
                 else{ 
 
                     // 1
@@ -220,6 +224,7 @@
 
                     // nostro colpo lo ha affondato
                     if (bomba == nemico) {
+                        fine = true;
                         window.alert("Radarista: Comandante il sottomarino è in fiamme, siamo salvi!");
                         window.location.href = "index.html";
                     }
@@ -244,11 +249,14 @@
                         window.location.href = "index.html";
                     }
 
-                    if (spari == 3 && fine == false)
+                    if (spari == 3 && fine == false){
+                        document.getElementById("water").play();
                         window.alert("Radarista: Comandante il bersaglio ha mancato l'obiettivo!\nDa questo momento siamo raggiungibili dai loro missili");
-
-                    else if (fine == false)
+                    }
+                    else if (fine == false){
+                        document.getElementById("water").play();
                         window.alert("Radarista: Comandante il bersaglio ha mancato l'obiettivo!");
+                    }
                 }
 
             }
@@ -257,7 +265,7 @@
     
         async function cleanNormale() {
             document.getElementById("x").value = "";
-            document.getElementById('nemico').innerHTML = 'ULTIMO AVVISTAMENTO ALLA POSIZIONE: ' + nemico;
+            document.getElementById('nemico').innerHTML = 'ULTIMO AVVISTAMENTO: ' + nemico;
 
         }
 
