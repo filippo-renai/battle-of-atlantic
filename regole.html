@@ -16,19 +16,44 @@
 <body style="background-color:rgb(6, 71, 87);">
   <!-- Title -->
   <div class="container text-center">
-  <br><br>
-  <div class="container text-center">
     <div class="row">
       <div class="col">
       </div>
       <div class="col-6">
-        <img src="istruzione.png" class="img-fluid" alt="Responsive image">
+        <h1 style="color:#576ee1">
+          <font face="Courier New, Courier, mono"> BATTLE OF ATLANTIC </font>
+        </h1>
+      </div>
+      <div class="col">
+        <br>
+        <button type="button" class="btn btn-outline-info btn-sm" onclick="sound();">♫</button>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container ">
+    <audio id="main" src="main.mp3" preload="auto" loop></audio>
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-6">
+
+        <p class="lh-1" style="color:#ffffff">
+          <font face="Courier New, Courier, mono">
+            L' U-boot si muove su una griglia 5x5, puo' spostarsi su essa solo in queste direzioni: ◄ | ▲ | ► | ▼ <br><br>
+            Oppure puo' decidere di non muoversi, durante ogni turno il nostro radar segnalerà la sua ultima
+            posizione. <br><br>
+            Affonda l'uboot prima che affondi te, le propabilità di essere colpito aumentano con il tempo.
+          </font>
+        </p>
+
 
       </div>
       <div class="col">
       </div>
     </div>
   </div>
+
 
 
   <br><br><br>
@@ -39,7 +64,7 @@
       </div>
       <div class="col-8">
         <a href="battle.html">
-          <button type="button" class="btn btn-outline-danger btn-lg">Scruta l'orizzonte</button>
+          <button type="button" class="btn btn-outline-info btn-lg">Home</button>
         </a>
       </div>
       <div class="col">
