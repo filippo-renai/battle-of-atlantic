@@ -11,11 +11,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>BOA</title>
+    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=t_S_cN2re4g#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
 </head>
 
 
 <body style="background-color:rgb(6, 71, 87);">
-    <audio id="musica" src="main.mp3" preload="auto" loop></audio>
+    
     <!-- Title -->
     <div class="container text-center">
         <div class="row">
@@ -34,18 +35,17 @@
     </div>
     <br><br>
     <div class="container ">
-        <audio id="main" src="main.mp3" preload="auto" loop></audio>
+        <audio id="main" src="music/main.mp3" preload="auto" loop></audio>
         <div class="row">
 
 
             <p class="lh-1" style="color:#ffffff">
                 <font face="Courier New, Courier, mono">
-                    Diario del capitano Smith 02/luglio/1941 <br><br>
-
+                    [02/luglio/1941] Diario del capitano Smith  <br><br>
                     A causa di un problema al motore ci siamo dovuti distaccare dal convoglio
                     diretto nella nostra cara Inghilterra.<br><br>
                     L'equipaggio è in stato di allerta, sappiamo tutti
-                    che non saremo soli per sempre, queste acque sono piene di branchi di u-boot.
+                    che non saremo soli per sempre, la nostra inteligence ci ha avvertito di u-boot sulle nostre tracce.
                 </font>
             </p>
 
@@ -62,7 +62,7 @@
             <div class="col"></div>
             <div class="col">
                 <a href="regole.html">
-                    <button type="button" class="btn btn-outline-info btn-lg">Istruzioni</button>
+                    <button type="button" class="btn btn-outline-info btn-lg">Istruzione missili</button>
                 </a>
             </div>
             <div class="col">
@@ -78,7 +78,7 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
         <div class="text-center p-4" style="background-color: rgb(6, 71, 87);">
-            <p style="color:#ffffff">
+            <p style="color:#b8bf33">
                 <font face="Courier New, Courier, mono">
                     Code by Filippo Renai: <a class="text-reset fw-bold"
                         href="https://github.com/filippo-renai">Github</a>
@@ -94,17 +94,8 @@
         crossorigin="anonymous"></script>
 
     <script>
-        let suono = false;
-        async function sound() {
-            if (suono) {
-                suono = false;
-                document.getElementById("musica").pause();
-            }
-            else {
-                suono = true;
-                document.getElementById("musica").play();
-            }
-        }
+    
+
 
     </script>
 
